@@ -11,6 +11,7 @@ function appendToDisplay(value) {
 
   switch (value) {
     case "+":
+    case "-":
       setOperator(value);
       break;
     default:
@@ -30,6 +31,9 @@ function calculate() {
   switch (operator) {
     case "+":
       result = parseFloat(operand1) + parseFloat(operand2);
+      break;
+    case "-":
+      result = parseFloat(operand1) - parseFloat(operand2);
       break;
     default:
       result = "";
