@@ -13,6 +13,7 @@ function appendToDisplay(value) {
     case "+":
     case "-":
     case "*":
+    case "/":
     case "%":
       setOperator(value);
       break;
@@ -39,6 +40,9 @@ function calculate() {
       break;
     case "*":
       result = parseFloat(operand1) * parseFloat(operand2);
+      break;
+    case "/":
+      result = parseFloat(operand1) / parseFloat(operand2);
       break;
     case "%":
       result = parseFloat(operand1) % parseFloat(operand2);
