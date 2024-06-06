@@ -37,7 +37,7 @@ function calculate() {
       result = parseFloat(operand1) - parseFloat(operand2);
       break;
     case "*":
-      result = parseFloat(operand1) - parseFloat(operand2);
+      result = parseFloat(operand1) * parseFloat(operand2);
       break;
     default:
       result = "";
